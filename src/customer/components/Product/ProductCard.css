@@ -1,0 +1,41 @@
+/* src/customer/components/Product/ProductCard.css */
+
+.ProductCard {
+    width: 15rem;
+    margin: 3rem;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .ProductCard .imageContainer {
+    width: 100%;
+    height: 350px; /* Set the desired height for the image container */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ProductCard .productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+  }
+  
+  .ProductCard .textPart {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .ProductCard:hover .textPart {
+    transform: translateY(-1rem);
+  }
+  
+  .ProductCard:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
